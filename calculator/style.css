@@ -1,0 +1,91 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: black; */
+}
+#para{
+    display:flex;
+    align-items:centre;
+    position:relative;
+}
+#container{
+    width:1300px;
+    
+    background: url(image/pexels-abby-kihano-431722.jpg) no-repeat center center/cover;
+    margin: 20px auto;
+    /* position:relative; */
+}
+#calculator{
+    width: 380px;
+    height:680px;
+    background-color:rgb(237, 241, 241);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 14px 38px 0  rgb(221, 166, 55);
+}
+#result{
+    height:120px;
+}
+#history{
+    text-align:right;
+    height:20px;
+    margin:0 20px;
+    padding-top:20px;
+    font-size:15px;
+    color:rgb(17, 16, 16);
+}
+#output{
+    text-align:right;
+    height:60px;
+    margin: 10px 20px;
+    font-size:30px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width:50px;
+    height:50px;
+    margin:15px;
+    float:left;
+    border-radius:50%;
+    border-width:0;
+    font-weight:bold;
+    font-size:15px;
+}
+.number, .empty{
+    background-color:rgb(80, 188, 238);
+
+}
+.operator{
+    background-color:rgb(190, 188, 39);
+}
+.number, .operator{
+    cursor:pointer;
+}
+.operator:active, .number:active{
+    font-size:13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline:0;
+}
+button:nth-child(4){
+    font-size:20px;
+    background-color:rgb(36, 66, 235);
+}
+button:nth-child(8){
+    font-size:20px;
+    background-color:rgb(31, 206, 89);
+}
+button:nth-child(12){
+    font-size:20px;
+    background-color:rgb(195, 243, 21);
+}
+button:nth-child(16){
+    font-size:20px;
+    background-color:red;
+}
+button:nth-child(20){
+    font-size:20px;
+    background-color:rgb(255, 0, 191);
+}
